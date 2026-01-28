@@ -1,0 +1,122 @@
+/* --- Osnovni stilovi --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4ecf7; /* svjetlo ljubičasta pozadina */
+    text-align: center; /* centriranje osnovnog teksta */
+    color: #333;
+}
+
+/* --- Navigacija --- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+}
+
+nav li {
+    display: inline-block;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad); /* ljubičasti gradient */
+    padding: 12px 30px;
+    margin: 0 10px;
+    border-radius: 50px; /* ovalni box */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+nav li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* --- Naslovi --- */
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0 40px 0;
+    color: #6c3483; /* tamnoljubičasta */
+    text-align: center;
+}
+
+h2, h3 {
+    margin: 20px 0 30px 0;
+    color: #8e44ad; /* ljubičasta */
+    text-align: center;
+}
+
+/* --- Paragrafi --- */
+p {
+    max-width: 800px;
+    margin: 10px auto 25px auto;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* --- Slike i video --- */
+img, video, iframe {
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Linkovi --- */
+a {
+    color: #9b59b6; /* ljubičasta */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #6c3483; /* tamnoljubičasta hover */
+}
+
+/* --- Slike --- */
+.slike1 {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* razmak između slika */
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.slike1 img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Custom font --- */
+@font-face {
+    font-family: 'VjekoslavRakovic';
+    src: url('font/VjekoslavRakovic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --- Font za ime --- */
+#fontic {
+    font-family: 'VjekoslavRakovic', "Montserrat", sans-serif;
+}
+
+/* --- Razmak i stil za slike i video --- */
+img, video {
+    display: block;
+    margin: 20px auto 120px auto; 
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
